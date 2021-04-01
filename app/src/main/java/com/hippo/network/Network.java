@@ -22,7 +22,10 @@ import android.net.NetworkInfo;
 
 public final class Network {
     private Network() {}
-
+	
+	/*
+	* 获取当前网络类型
+	*/
     public static int getActiveNetworkType(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
